@@ -1,5 +1,3 @@
-/* Titles font "Lato" */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* Contents text font "Raleway" */
 @font-face {
     font-family: "Raleway";
@@ -9,7 +7,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.CV__body{
+body > div{
     background: #782221 ;
     display: flex;
     flex-direction: column;
@@ -24,7 +22,7 @@ header{
     width: 100%;
     height: 25%;
 }
-.Profile__pic{
+.Profile--pic{
     width: 200px;
     height: 200px;
     border: 1px solid #dbc2a4;
@@ -32,7 +30,7 @@ header{
     border-radius: 50%;
     box-shadow: 0 0 30px #dbc2a4;
 }
-.contact__info{
+.contact--info{
     background: #2c1d27;
     width: 100%;
     height: 20%;
@@ -42,7 +40,7 @@ main{
     width: 100%;
     height: 70%;
 }
-.right__container{
+.right--container{
     background: white;
     width: 70%;
     height: 100%;
@@ -51,7 +49,7 @@ main{
     padding-left: 30px;
     padding-right: 15px;
 }
-.left__container{
+.left--container{
     background: #782221;
     width: 30%;
     height: 100%;
@@ -68,13 +66,13 @@ footer{
     width: 100%;
     height: 7%;
 }
-.professionnel__media{
+.professionnel--media{
     display: flex;
     justify-content: center;
     margin-top: 10px;
     gap:20px ;
 }
-.professionnel__media > a > img{
+.professionnel--media__icon{
     width: 60px;
     height: auto;
 }
@@ -103,30 +101,35 @@ header > h2{
     font-size:1.2em;
 }
 address > a > p{
-    font-family: "Raleway";
-    font-size: 0.9em;
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
     font-weight: 400;
     color: white;
+}
+address > a{
+    text-decoration: none;
 }
 .email{
     padding-right: 70px;
 }
-.main__title{
+.main--title{
     font-family: "Lato" ;
     font-size: 1.6em;
     background-color:#dbc2a4 ;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding-left: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.left__container > section> ul> li{
-    font-family: "Raleway";
+.left--container > section> ul> li{
+    font-family: "Raleway" , sans-serif;
     font-size: 1em;
     color: white;
     margin-bottom: 5px;
 }
-.right__container > section> h2{
+.right--container > section> h2{
     padding-left: 10px;
     border-left:10px solid #782221;
 }
@@ -135,22 +138,22 @@ h3{
     font-size: 1.4em;
 }
 time{
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 1em;  
 }
-.right__container > section> ul> li{
-    font-family: "Raleway";
+.right--container > section> ul> li{
+    font-family: "Raleway" , sans-serif;
     font-weight: 600;
     font-size: 1em;  
 }
 p{
-    font-family: "Raleway";
+    font-family: "Raleway" , sans-serif;
     font-weight: 600;
     font-size: 1em;  
 }
-.About >p{
-    font-family: "Raleway";
+.left--container__about >p{
+    font-family: "Raleway" , sans-serif;
     font-weight: 400;
     font-size: 1em;
     color: white;
@@ -159,8 +162,22 @@ p{
     word-spacing: 5px;
 }
 footer > time{
-    font-family: "Raleway";
+    font-family: "Raleway" , sans-serif;
     font-size: 1em;
     font-weight: 400;
     color: white;
+}
+/* Dynamism */
+h3:hover, .right--container > section > ul > li:hover{
+    background-color: rgba(0, 0, 0, 0.062);
+    border-right: 6px solid #782221;
+}
+.Profile--pic:hover{
+    cursor: zoom-in;
+}
+.professionnel--media__icon:hover{
+    opacity: 60%;
+}
+address > a > p:hover{
+    text-decoration: underline;
 }
